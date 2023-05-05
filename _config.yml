@@ -1,21 +1,20 @@
 # Site/SEO settings
-email: 
+email: narcissuscat@naver.com
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-title: Trophy
-description: 
-url: ""
+title: Myolog
+description: 프론트엔드 개발자 취준생
+url: "https://myomyoring.github.io/"
 baseurl: ""
-twitter_username: 
-default_img: 
+default_img: https://cdn.pixabay.com/photo/2020/05/06/06/18/blue-5136251_1280.jpg
 
 # Profile settings
-name: 
-profile_img: 
-profile: 
+name: 묘묘링
+profile_img: https://cdn.pixabay.com/photo/2019/04/16/23/25/morning-4133099_1280.jpg
+profile: 안녕하세요 공부 중인 프론트엔드 개발자 취준생, 묘묘링 입니다.
 social:
-  github: 
+  github: https://github.com/Myomyoring
 
 # Build settings
 markdown: kramdown

@@ -5,8 +5,8 @@ google_analytics:
 
 title: Myolog
 description: 프론트엔드 개발자 취준생
-url: "https://myomyoring.github.io/"
-baseurl: ""
+url: https://myomyoring.github.io
+baseurl:
 default_img: https://cdn.pixabay.com/photo/2020/05/06/06/18/blue-5136251_1280.jpg
 
 # Profile settings

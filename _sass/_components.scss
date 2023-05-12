@@ -436,7 +436,12 @@
   }
 
   a {
+    color: $color-alpha;
     border-bottom: 1px solid $color-alpha;
+
+    &:hover {
+      color: $color-black;
+    }
   }
 
   img {
@@ -456,6 +461,26 @@
 
     font-size: 0.75em;
     text-align: center;
+  }
+  mark {
+    background-color: $color-alpha;
+    border-radius: 0.1em;
+  }
+  blockquote {
+    background-color: $color-alpha--light;
+    padding-left: 0.75em;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    border-left: 3px solid $color-alpha;;
+    font-size: 90%;
+  }
+  code {
+    border-radius: 0.5em;
+    background-color: $color-alpha--light;
+    font-size: 75%;
+    margin: 0.2em;
+    padding: 0.5em;
+    display: block;
   }
 }
 

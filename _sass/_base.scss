@@ -1,9 +1,17 @@
 /**
  * Base Variables
  */
-$font-header: 'Space Mono', monospace;
-$font-body: 'Inconsolata', monospace;
-$font-post: 'Lora', sans-serif;
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-header: 'Amsterdam', monospace;
+$font-body: 'Amsterdam', monospace;
+$font-post: 'Amsterdam', sans-serif;
 
 $color-alpha: #5EB0DF;
 $color-alpha--light: #EBF1F9;
@@ -33,15 +41,15 @@ body {
   line-height: 1.6;
 
   @media (min-width: $mq-xs) {
-    font-size: 102.5%;
+    font-size: 75%;
   }
 
   @media (min-width: $mq-sm) {
-    font-size: 105%;
+    font-size: 80%;
   }
 
   @media (min-width: $mq-md) {
-    font-size: 107.5%;
+    font-size: 100%;
   }
 
   @media (min-width: $mq-lg) {
@@ -53,7 +61,7 @@ body {
   }
 
   @media (min-width: $mq-xxl) {
-    font-size: 125%;
+    font-size: 120%;
   }
 }
 
@@ -79,10 +87,10 @@ h1 {
 h2 {
   margin-bottom: 0.25em;
 
-  font-size: 1.75em;
+  font-size: 1em;
 
   @media (min-width: $mq-md) {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 }
 
@@ -103,7 +111,7 @@ p {
 }
 
 a {
-  color: $color-black;
+  color: $color-alpha--light;
   text-decoration: none;
   transition: color 0.4s ease-in-out;
 

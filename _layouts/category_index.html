@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="previews">
   <div>
-    <a class="nav nav--white" href="{{ site.baseurl }}/">
+    <a class="nav nav--white" href="{{ site.url }}/">
       <i class="fa fa-lg fa-arrow-left"></i>
       <span>이전</span>
     </a>
@@ -30,8 +30,8 @@ layout: default
         {% for post in site.categories[page.title] %}
 
           <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-            <a class="preview__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
-              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="preview__link" href="{{ post.url | prepend: site.url }}" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y년 %-m월 %-d일" }}</span>
               <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
               <p class="preview__excerpt" itemprop="description">{{ post.content | strip_html | truncatewords: 30 }}</p>
               <span class="preview__more">보기</span>

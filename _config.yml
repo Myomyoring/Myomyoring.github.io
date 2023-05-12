@@ -31,7 +31,6 @@ exclude:
   - .DS_Store
   - Gemfile
   - Gemfile.lock
-  - LICENSE.txt
   - README.md
 
 # Pagination

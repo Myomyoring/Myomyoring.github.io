@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Myolog</title>
+    <description>프론트엔드 개발자 취준생</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 13 May 2023 17:43:08 +0900</pubDate>
+    <lastBuildDate>Sat, 13 May 2023 17:43:08 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>1장. 프로그래밍 | 모던 자바스크립트 Deep Dive</title>
+        <description>&lt;figure&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/img/Deep_Dive.png&quot; alt=&quot;딥다이브&quot; /&gt;
+  &lt;figcaption&gt; 1일 차&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;article&gt;
+&lt;h1&gt;1장. 프로그래밍&lt;/h1&gt;
+&lt;br /&gt;
+&lt;h2&gt;1.1 프로그래밍이란?&lt;/h2&gt;
+&lt;blockquote&gt;&lt;strong&gt;프로그래밍&lt;/strong&gt;이란 컴퓨터에게 실행을 요구하는 일종의 &lt;mark&gt;커뮤니케이션&lt;/mark&gt;이다.&lt;/blockquote&gt;
+해결해야 할 문제, 즉 &lt;u&gt;요구사항을 정확히 이해해야 한다.&lt;/u&gt;&lt;br /&gt;
+이 때 필요한 것이 &lt;mark&gt;문제 해결 능력&lt;/mark&gt;이다.&lt;br /&gt;
+이 문제 해결 능력은 컴퓨터 입장에서 바라보고 방안을 모색해 정의해야 한다.&lt;br /&gt;
+예를 들면,&lt;br /&gt;
+&lt;strong&gt;“볼륨”&lt;/strong&gt; 을 조절하려는 명령을 할 때,
+&lt;blockquote&gt;사람 : 볼륨이 크니 좀 줄여라 or 볼륨이 작다 좀만 더 키워라&lt;/blockquote&gt;
+&lt;blockquote&gt;컴퓨터 : 볼륨을 60으로 맞출 것 or 볼륨을 1단계 키울 것&lt;/blockquote&gt;
+이처럼 사람과 컴퓨터는 사고, 인지 방식이 다르기 때문에 컴퓨터 시점에서 문제 해결 능력을 기르기 위해선 &lt;mark&gt;수학적 사고&lt;/mark&gt;와 &lt;mark&gt;논리적 사고&lt;/mark&gt;가 필요하다.
+&lt;br /&gt;&lt;br /&gt;
+&lt;h2&gt;1.2 프로그래밍 언어&lt;/h2&gt;
+사람이 이해할 수 있는 언어 → &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%9E%90%EC%97%B0%EC%96%B4&quot;&gt;자연어&lt;/a&gt;&lt;br /&gt;
+컴퓨터가 이해할 수 있는 언어 → &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EA%B8%B0%EA%B3%84%EC%96%B4&quot;&gt;기계어&lt;/a&gt;&lt;br /&gt;
+사람이 직접 기계어를 작성해 컴퓨터에게 전달하는 것은 매우 어렵기 때문에&lt;br /&gt;
+사람이 이해할 수 있는 약속된 구문인 &lt;strong&gt;“프로그래밍 언어 (인공어)”&lt;/strong&gt;를 기계어로 변환할 수 있는 번역기인 &lt;mark&gt;컴파일러&lt;/mark&gt; 또는 &lt;mark&gt;인터프리터&lt;/mark&gt;를 이용해야 한다.
+&lt;pre&gt;
+    &lt;code&gt;
+    // 프로그래밍 언어 중 하나인, 자바스크립트로 표현한 코드
+    console.log(&quot;Hello World&quot;);
+    &lt;/code&gt;
+&lt;/pre&gt;
+프로그래밍 언어는 &lt;mark style=&quot;background-color: #5EB0DF&quot;&gt;구문&lt;/mark&gt;과 &lt;mark style=&quot;background-color: #5EB0DF&quot;&gt;의미&lt;/mark&gt;의 조합으로 표현된다.&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;1.3 구문과 의미&lt;/h2&gt;
+문법에 맞는 문장을 구성하며 의미를 갖고 있어야 한다.
+&lt;pre&gt;
+    &lt;code&gt;
+    const number = &apos;string&apos;;
+    console.log(number * number); // NaN
+    &lt;/code&gt;
+&lt;/pre&gt;
+문법적으론 문제가 없지만 의미가 없는 코드이다.&lt;br /&gt;
+의미를 가지기 위해서는 요구사항을 해결해야 한다.&lt;br /&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Thu, 11 May 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023/05/11/%E1%84%83%E1%85%B5%E1%86%B8%E1%84%83%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B31/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/05/11/%E1%84%83%E1%85%B5%E1%86%B8%E1%84%83%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B31/</guid>
+        
+        
+        <category>DeepDive</category>
+        
+      </item>
+    
+      <item>
+        <title>블로그 생성</title>
+        <description>&lt;figure&gt;
+  &lt;img src=&quot;https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg&quot; alt=&quot;Placeholder&quot; /&gt;
+  &lt;figcaption&gt;✈️ 여정의 시작&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;article&gt;
+여러 블로그를 돌고 돌다가&lt;br /&gt;
+깃허브 블로그 개설을 &lt;u&gt;5일 간&lt;/u&gt;의 여정 끝에 오늘 마쳤다.&lt;br /&gt;
+&lt;br /&gt;
+어릴 때부터 블로그에 글쓰는 것을 좋아해서 이 블로그 저 블로그 많이 사용했다.&lt;br /&gt;
+하지만 글쓰기 에디터나 뷰가 커스텀을 해도 맘에 안들면 꾸준히 사용하질 못했다.&lt;br /&gt;
+그래서 하나부터 열까지 내 손으로 만들어봤더니, 프로젝트 할 때처럼 에러 터지면 머리 부여잡고&lt;br /&gt;
+해결되면 또 성취감에 아주 기쁘다.&lt;br /&gt;
+&lt;br /&gt;
+개발 공부를 시작한지는 약 1년 정도 됐다.&lt;br /&gt;
+어느 블로그를 써도 불편하기도 하고 학원을 다닐 때&lt;br /&gt;
+강사님의 강의자료 공개 제한 등이 있어서 블로그 생성을 미루다가&lt;br /&gt;
+노션에 공부한 내용을 전부 임시로 기록을 해놓았다. 이걸로 만족하려 했는데...&lt;br /&gt;
+&lt;br /&gt;
+공부하면서 에러나, 알고 싶은 내용을 검색했을 때 나오는 기술 블로그를 들어가 보면&lt;br /&gt;
+포폴용으로 사용하는 사람이 대부분이라&lt;br /&gt;
+&lt;i style=&quot;color: darkgrey&quot;&gt;글이 정돈도 안 돼있고 오타에 전문용어에 대한 가이드도 없이 뿌려놓는 ...😇&lt;/i&gt;&lt;br /&gt;
+글에서 우러나오는 불친절함에 화가 나는 글이 많았다.&lt;br /&gt;
+&lt;del style=&quot;color: darkgrey&quot;&gt;(글을 못써서 그런 것 보단 무성의 함에 불편함을 느낀 것 같다.)&lt;/del&gt;&lt;br /&gt;
+우선 나도 불평 늘어놓기보단 꾸준히 써보도록 노력해야겠다.
+
+&lt;blockquote&gt;
+Luck is the residue of design.
+  &lt;cite&gt;Branch Rickey&lt;/cite&gt;
+&lt;/blockquote&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Fri, 05 May 2023 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2023/05/05/%EC%B2%AB%EA%B8%80/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/05/05/%EC%B2%AB%EA%B8%80/</guid>
+        
+        
+        <category>MyoMyoRing</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -27,7 +27,6 @@ compress_html:
   comments: all
   startings: [html, head, body]
 exclude:
-  - _screenshots
   - .DS_Store
   - Gemfile
   - Gemfile.lock

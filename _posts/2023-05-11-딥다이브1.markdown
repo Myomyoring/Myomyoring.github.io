@@ -4,7 +4,7 @@ title: "1장. 프로그래밍 | 모던 자바스크립트 Deep Dive"
 date: 2023-05-11
 categories:
   - DeepDive
-description:
+description: 딥다이브1
 image: "https://cdn.pixabay.com/photo/2020/09/23/14/08/dolphin-5596080_1280.jpg"
 image-sm: "https://cdn.pixabay.com/photo/2020/09/23/14/08/dolphin-5596080_640.jpg"
 ---

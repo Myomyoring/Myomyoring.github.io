@@ -45,7 +45,7 @@ image-sm: "https://cdn.pixabay.com/photo/2020/09/23/14/08/dolphin-5596080_640.jp
 <pre>
     <code>
     const number = 'string';
-    console.log(number * number); // NaN 
+    console.log(number * number); // NaN
     </code>
 </pre>
 문법적으론 문제가 없지만 의미가 없는 코드이다.<br/>

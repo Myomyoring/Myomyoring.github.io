@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27b8a1bf-7ac8-484b-9a1c-c5dd2f1a9a9c" name="변경" comment="fix: resolve the category error2">
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/archive-link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/categories-tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/category_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/compress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_plugins/category_generator.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2023-05-05-첫글.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-05-05-첫글.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2023-05-11-딥다이브1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-05-11-딥다이브1.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_extends.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_helpers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Deep_Dive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PMM9vK2zYYjgehDzBnJ5yIPo05" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/myosunshine/Desktop/developer/Personal_Study/workspace/Myomyoring.github.io/_posts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/_site" />
+      <recent name="$PROJECT_DIR$/assets/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_sass/minimal-mistakes/skins" />
+    </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Myomyoring.github.io" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Myomyoring.github.io" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="27b8a1bf-7ac8-484b-9a1c-c5dd2f1a9a9c" name="변경" comment="" />
+      <created>1683262350038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683262350038</updated>
+      <workItem from="1683262351465" duration="51000" />
+      <workItem from="1683262405534" duration="671000" />
+      <workItem from="1683263080249" duration="429000" />
+      <workItem from="1683263525907" duration="1020000" />
+      <workItem from="1683264998989" duration="668000" />
+      <workItem from="1683276242540" duration="406000" />
+      <workItem from="1683276651866" duration="15394000" />
+      <workItem from="1683593776026" duration="16073000" />
+      <workItem from="1683770952084" duration="831000" />
+      <workItem from="1683813764297" duration="16967000" />
+      <workItem from="1683961138218" duration="7363000" />
+      <workItem from="1683970307046" duration="37441000" />
+    </task>
+    <task id="LOCAL-00001" summary="rename : settings">
+      <created>1683262839657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683262839657</updated>
+    </task>
+    <task id="LOCAL-00002" summary="style : change theme">
+      <created>1683276487334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683276487334</updated>
+    </task>
+    <task id="LOCAL-00003" summary="style : change theme">
+      <created>1683294451558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683294451558</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs : readme.md edit">
+      <created>1683294638577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683294638577</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat, style, docs: add comment, add post">
+      <created>1683877443501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683877443501</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: ing...">
+      <created>1683881990147</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683881990147</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: ing...">
+      <created>1683883049488</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683883049488</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: resolve the category error">
+      <created>1683962374477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683962374477</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: resolve the category error2">
+      <created>1683965379519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683965379519</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename : settings" />
+    <MESSAGE value="style : change theme" />
+    <MESSAGE value="docs : readme.md edit" />
+    <MESSAGE value="feat, style, docs: add comment, add post" />
+    <MESSAGE value="fix: ing..." />
+    <MESSAGE value="fix: resolve the category error" />
+    <MESSAGE value="fix: resolve the category error2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: resolve the category error2" />
+  </component>
+</project>

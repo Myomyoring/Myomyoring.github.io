@@ -10,6 +10,13 @@
   font-weight: normal;
   font-style: normal;
 }
+// 왼손잡이도 예뻐
+@font-face {
+  font-family: 'Pretty_Left_handed';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Pretty_Left_handed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 // 순악필여사
 @font-face {
   font-family: 'SSVeryBadHandwriting';
@@ -30,7 +37,7 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: 'Amsterdam';
+$sans-serif: 'Pretty_Left_handed';
   //      -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   //"Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;

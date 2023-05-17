@@ -5,7 +5,7 @@ excerpt: 딥다이브1
 categories:
     - DeepDive
 tags:
-- [DeepDive, JavaScript, Stuby, 자바스크립트, 딥다이브, 공부]
+    - [DeepDive, JavaScript, Stuby, 자바스크립트, 딥다이브, 공부]
 
 toc: true
 toc_sticky: true

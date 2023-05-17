@@ -15,10 +15,15 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  //background-image: url("https://cdn.pixabay.com/photo/2017/01/26/17/24/monument-2011140_1280.jpg");
+  //background-position: 0em 34.6em;
+  //background-size: cover;
+
 
 
   footer {
+    background-color: $footer-background-color;
+    opacity: 0.8;
     @include clearfix;
     text-align: center;
     //margin-left: auto;
@@ -26,6 +31,7 @@
     //margin-top: 2em;
     max-width: 100%;
     padding-top: 1.2em;
+    padding-bottom: 0.7em;
     //padding: 0 1em 2em;
 
     //@include breakpoint($x-large) {

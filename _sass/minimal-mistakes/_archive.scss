@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .archive {
-  margin-top: 1em;
-  margin-bottom: 2em;
+  //margin-top: 1em;
+  //margin-bottom: 2em;
 
   @include breakpoint($large) {
     float: right;
@@ -14,13 +14,18 @@
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    //padding-right: $right-sidebar-width;
   }
 }
 
 .archive__item {
+  transition: background-color 0.5s ease-in-out;
   position: relative;
-
+  &:hover {
+    font-weight: bold;
+    //background: linear-gradient(to left, $footer-background-color, $background-color);
+    //background-color: transparent;
+  }
   a {
     position: relative;
     text-decoration: none;
@@ -31,13 +36,16 @@
     position: static;
   }
 }
-
+.archive__date{
+  text-align: right;
+  font-size: $type-size-6;
+}
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  //margin: 1.414em 0 0.5em;
+  //padding-bottom: 0.5em;
+  font-size: $type-size-3;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  //border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -45,10 +53,10 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  //margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  line-height: initial;
-  overflow: hidden;
+  //line-height: initial;
+  //overflow: hidden;
   text-overflow: ellipsis;
 
   a[rel="permalink"]::before {
@@ -68,13 +76,13 @@
 /* remove border*/
 .page__content {
   .archive__item-title {
-    margin-top: 1em;
+    //margin-top: 1em;
     border-bottom: none;
   }
 }
 
 .archive__item-excerpt {
-  margin-top: 0;
+  //margin-top: 0;
   font-size: $type-size-6;
 
   & + p {

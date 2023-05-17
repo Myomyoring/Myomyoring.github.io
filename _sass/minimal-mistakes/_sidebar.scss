@@ -10,7 +10,7 @@
   @include clearfix();
   margin-outside: opacity(30px);
   padding-top: 1em;
-  padding-left: 2em;
+  padding-left: 1.7em;
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
   //   position: relative;
@@ -22,7 +22,7 @@
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
+    //opacity: 0.;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
@@ -53,6 +53,7 @@
   h4,
   h5,
   h6 {
+
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
   }
@@ -127,7 +128,7 @@
 .author__avatar {
   display: table-cell;
   //vertical-align: top;
-  width: 150px;
+  width: 200px;
   //height: 150px;
 
   @include breakpoint($large) {
@@ -138,7 +139,7 @@
 
   img {
     //max-width: 110px;
-    border-radius: 17%;
+    border-radius: 7%;
     @include breakpoint($large) {
       //padding: 5px;
       //border: 1px solid $border-color;
@@ -170,7 +171,7 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 }

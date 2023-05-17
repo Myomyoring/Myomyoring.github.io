@@ -49,9 +49,10 @@ body {
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
+    //margin-top: 1em;
+    //margin-left: 0;
+    //margin-right: 0;
     width: 100%;
     clear: both;
 
@@ -69,7 +70,8 @@ body {
 }
 
 .page__title {
-  margin-top: 0.5em;
+  font-size: $type-size-1;
+  //margin-top: 0.5em;
   line-height: 1;
 
   a {
@@ -178,7 +180,7 @@ body {
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  //margin-bottom: 2em;
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -186,9 +188,10 @@ body {
   animation-delay: 0.25s;
 
   &--overlay {
+
     position: relative;
-    margin-bottom: 2em;
-    padding: 3em 0;
+    //margin-bottom: 2em;
+    //padding: 3em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,8 +206,12 @@ body {
     }
 
     .wrapper {
-      padding-left: 1em;
-      padding-right: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      width: 90%;
+      padding-top: 10em;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -214,13 +221,14 @@ body {
     .page__title,
     .page__meta,
     .page__lead,
+    .page__date,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      //text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__lead {
-      max-width: $medium;
+      //max-width: $medium;
     }
 
     .page__title {
@@ -288,8 +296,9 @@ body {
 }
 
 .page__share-title {
+  font-family: 'SSVeryBadHandwriting';
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
   text-transform: uppercase;
 }
 

@@ -1,20 +1,19 @@
 ---
 title: "블로그 생성"
+header: 
+    overlay_image: "https://cdn.pixabay.com/photo/2022/09/03/14/32/airplane-7429725_1280.jpg"
+    caption:
 excerpt: 첫 글
 
 categories:
     - MyoMyoRing
 tags:
     - [myomyoring]
-
 toc: false
 toc_sticky: false
 
 date: 2023-05-05
 last_modified_at: 2023-05-05
-
-image: https://cdn.pixabay.com/photo/2022/09/03/14/32/airplane-7429725_1280.jpg
-image-sm: https://cdn.pixabay.com/photo/2022/09/03/14/32/airplane-7429725_640.jpg
 ---
 <figure>
   <img src="https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg" alt="Placeholder"/>

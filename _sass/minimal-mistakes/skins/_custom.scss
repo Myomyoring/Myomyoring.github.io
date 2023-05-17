@@ -8,9 +8,11 @@ $background-color: #eaeff5 !default; // 뒷 배경색
 $text-color: #1a2215 !default; // 글자색
 $primary-color: #4b7045 !default; // 강조색?
 $border-color: #2e4936 !default; // 테두리 색
+$light-color: #cce0d9 !default; // 추가 색
+$pure-light-color: #d9e8e3 !default; // 추가 색
 
 /* 얘네 아직 무슨 역할인지 모르겠음 code & form 태그 추측 */
-$code-background-color: #4D5357 !default;
+$code-background-color: #b9d7cd !default;
 $code-background-color-dark: #3F4447 !default;
 $form-background-color: mix(#000, #FFFDE4, 15%) !default;
 

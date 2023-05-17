@@ -64,13 +64,19 @@ small,
 }
 
 p {
-  margin-bottom: 1.3em;
+  //margin-bottom: 1.3em;
+}
+
+b,
+strong {
+  font-size: 17pt;
+  font-family: 'SSVeryBadHandwriting';
 }
 
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid $primary-color;
   a {
     color: inherit;
   }
@@ -107,10 +113,11 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
+  background-color: $pure-light-color;
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
+  //font-style: italic;
   border-left: 0.25em solid $primary-color;
 
   cite {
@@ -154,6 +161,22 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
+}
+
+code {
+  border-radius: 0.5em;
+  background-color: $light-color;
+  font-size: 75%;
+  margin: 0.2em;
+  padding: 0.5em;
+  display: block;
+}
+
+mark {
+  border-radius: 3px;
+  padding: 1px 7px;
+  color: white;
+  background-color: $primary-color;
 }
 
 pre {
@@ -244,10 +267,11 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
   color: $muted-text-color;
   font-family: $caption-font-family;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
+  text-align: center;
+  margin: auto;
 
   a {
     -webkit-transition: $global-transition;

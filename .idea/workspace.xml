@@ -4,47 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b8a1bf-7ac8-484b-9a1c-c5dd2f1a9a9c" name="변경" comment="fix: resolve the category error2">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/archive-link.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/categories-tab.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/category_index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/compress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_plugins/category_generator.rb" beforeDir="false" />
+    <list default="true" id="27b8a1bf-7ac8-484b-9a1c-c5dd2f1a9a9c" name="변경" comment="style: layout..">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page__date.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/page__date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page__hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/page__hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2023-05-05-첫글.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-05-05-첫글.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2023-05-11-딥다이브1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-05-11-딥다이브1.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_components.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_extends.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_helpers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Deep_Dive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_masthead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_custom.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +117,7 @@
       <workItem from="1683770952084" duration="831000" />
       <workItem from="1683813764297" duration="16967000" />
       <workItem from="1683961138218" duration="7363000" />
-      <workItem from="1683970307046" duration="37441000" />
+      <workItem from="1683970307046" duration="73312000" />
     </task>
     <task id="LOCAL-00001" summary="rename : settings">
       <created>1683262839657</created>
@@ -210,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683965379519</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="style: change theme">
+      <created>1684247859027</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684247859027</updated>
+    </task>
+    <task id="LOCAL-00011" summary="style: layout..">
+      <created>1684331589555</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684331589555</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +221,8 @@
     <MESSAGE value="fix: ing..." />
     <MESSAGE value="fix: resolve the category error" />
     <MESSAGE value="fix: resolve the category error2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: resolve the category error2" />
+    <MESSAGE value="style: change theme" />
+    <MESSAGE value="style: layout.." />
+    <option name="LAST_COMMIT_MESSAGE" value="style: layout.." />
   </component>
 </project>

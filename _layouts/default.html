@@ -1,21 +1,50 @@
 ---
-layout: compress
 ---
-<!DOCTYPE html>
-<html>
 
-  {% include head.html %}
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+<!-- 스크롤바   -->
+    <style>
+      ::-webkit-scrollbar{width: 7px;}
+      ::-webkit-scrollbar-track {background-color:#d9e8e3; border-radius: 7px;}
+      ::-webkit-scrollbar-thumb {background-color:#b9d7cd; border-radius: 7px;}
+      ::-webkit-scrollbar-thumb:hover {background: #4b7045;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment
 
-  <body>
+    </style>
+  </head>
 
-    <main>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
 
+    <div class="initial-content">
       {{ content }}
+    </div>
 
-    </main>
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
 
-    {% include footer.html %}
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
 
   </body>
-
 </html>

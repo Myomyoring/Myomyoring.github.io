@@ -21,6 +21,11 @@
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
+  <span style="display: inline">
+    <a class="page__backBtn" href="javascript:window.history.back();">
+      <i class="fa fa-lg fa-arrow-left"></i>
+      이전</a>
+  </span>
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
       <span><time class="page__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time></span>

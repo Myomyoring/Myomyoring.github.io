@@ -15,7 +15,7 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    //max-width: $max-width;
   }
 }
 
@@ -83,6 +83,14 @@ body {
 
   & + .page__meta {
     margin-top: -0.5em;
+  }
+}
+
+.page__backBtn {
+  text-decoration: none;
+  padding-left: 1em;
+  i {
+    padding-top: 0.3em;
   }
 }
 
@@ -411,7 +419,7 @@ body {
 
 .taxonomy__count {
   color: $muted-text-color;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 2.5;
   padding-bottom: 0;
 }

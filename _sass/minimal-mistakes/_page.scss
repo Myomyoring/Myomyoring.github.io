@@ -70,8 +70,10 @@ body {
 }
 
 .page__title {
-  font-size: $type-size-1;
-  //margin-top: 0.5em;
+  font-size: $type-size-2;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   line-height: 1;
 
   a {
@@ -86,7 +88,9 @@ body {
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-5;
+  margin: 0;
+  margin-top: 0.5em;
 }
 
 .page__content {
@@ -333,17 +337,33 @@ body {
   padding-right: 0.5em;
 }
 
+.page__date {
+  font-size: $type-size-6;
+
+  strong {
+    font-size: $type-size-6;
+    margin-right: 10px;
+    display: inline;
+  }
+}
+
 /*
    Page taxonomy
    ========================================================================== */
 
 .page__taxonomy {
+  margin: 0;
+  color: $background-color;
+  font-size: $type-size-6;
+
   .sep {
     display: none;
   }
 
   strong {
+    font-size: $type-size-6;
     margin-right: 10px;
+    display: inline;
   }
 }
 
@@ -353,8 +373,8 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
-  border-radius: $border-radius;
+  //border: 1px solid mix(#000, $border-color, 25%);
+  //border-radius: $border-radius;
 
   &:hover {
     text-decoration: none;
@@ -540,7 +560,7 @@ body {
   float: left;
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  //border-top: 1px solid $border-color;
 
   @include breakpoint($large) {
     float: right;

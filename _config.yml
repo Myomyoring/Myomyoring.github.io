@@ -107,7 +107,7 @@ author:
   name             : "묘묘링"
   avatar           : "https://cdn.pixabay.com/photo/2015/05/26/21/25/statue-785490_1280.jpg"
   bio              : "프론트엔드 개발자 취준생"
-  location         :
+  location         : "Seoul"
   email            :
   links:
     - label: "Email"

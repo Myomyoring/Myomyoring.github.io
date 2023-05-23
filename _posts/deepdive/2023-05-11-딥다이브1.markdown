@@ -2,7 +2,7 @@
 title: "1장. 프로그래밍 / 모던 자바스크립트 Deep Dive"
 header:
     overlay_image: "https://cdn.pixabay.com/photo/2020/09/23/14/08/dolphin-5596080_1280.jpg"
-    caption: "캡션"
+    caption:
 excerpt: 딥다이브1
 
 categories:

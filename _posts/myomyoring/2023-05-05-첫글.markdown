@@ -21,7 +21,6 @@ last_modified_at: 2023-05-05
 </figure>
 <br/>
 
-<article>
 여러 블로그를 돌고 돌다가<br/>
 깃허브 블로그 개설을 <u>5일 간</u>의 여정 끝에 오늘 마쳤다.<br/>
 <br/>
@@ -46,4 +45,3 @@ last_modified_at: 2023-05-05
 Luck is the residue of design.
   <cite>Branch Rickey</cite>
 </blockquote>
-</article>

@@ -63,6 +63,8 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
+      padding-left: 1em;
+      padding-right: 1em;
       width: 100%;
       clear: both;
     }
@@ -291,7 +293,7 @@ body {
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid silver;
 
   @include breakpoint(max-width $small) {
     .btn span {
@@ -569,9 +571,11 @@ body {
 
 .page__related {
   @include clearfix();
-  float: left;
+  //float: left;
   margin-top: 2em;
   padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   //border-top: 1px solid $border-color;
 
   @include breakpoint($large) {

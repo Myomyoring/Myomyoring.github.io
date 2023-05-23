@@ -11,6 +11,7 @@
   margin-outside: opacity(30px);
   padding-top: 1em;
   padding-left: 1.7em;
+  padding-right: 1.7em;
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
   //   position: relative;
@@ -77,6 +78,8 @@
 
 .sidebar__right {
   margin-bottom: 1em;
+  padding-left: 0.5em;
+
 
   @include breakpoint($large) {
     position: absolute;
@@ -150,9 +153,11 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
+  padding-top: 10px;
   padding-left: 15px;
-  padding-right: 25px;
+  padding-right: 15px;
   line-height: 1;
+  vertical-align: middle;
 
   @include breakpoint($large) {
     display: block;
@@ -197,7 +202,7 @@
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  //vertical-align: middle;
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;

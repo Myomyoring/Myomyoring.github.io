@@ -5,6 +5,8 @@
 .archive {
   //margin-top: 1em;
   //margin-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 
   @include breakpoint($large) {
     float: right;
@@ -39,6 +41,7 @@
 .archive__date{
   text-align: right;
   font-size: $type-size-6;
+  color: gray;
 }
 .archive__subtitle {
   //margin: 1.414em 0 0.5em;

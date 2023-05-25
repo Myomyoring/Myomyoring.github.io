@@ -17,6 +17,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">프로그래밍</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Git & Github" %}
+                        <li><a href="/categories/git-github" class="">Git & Github ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">책</span>
             <ul>
                 {% for category in site.categories %}
@@ -25,5 +34,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <span class="nav__sub-title">프로젝트</span>
+             <ul>
+                 {% for category in site.categories %}
+                     {% if category[0] == "Github Blog" %}
+                        <li><a href="/categories/github-blog" class="">Github Blog ({{category[1].size}})</a></li>
+                     {% endif %}
+                 {% endfor %}
+             </ul>
   </ul>
 </nav>

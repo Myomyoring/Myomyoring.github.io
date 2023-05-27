@@ -1,5 +1,5 @@
 ---
-title: "블로그 생성"
+title: "[묘묘링] 블로그 생성"
 header: 
     overlay_image: "https://cdn.pixabay.com/photo/2022/09/03/14/32/airplane-7429725_1280.jpg"
     caption:

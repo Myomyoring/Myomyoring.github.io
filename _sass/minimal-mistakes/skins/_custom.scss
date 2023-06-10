@@ -13,7 +13,7 @@ $pure-light-color: #d9e8e3 !default; // 추가 색
 
 /* 얘네 아직 무슨 역할인지 모르겠음 code & form 태그 추측 */
 $code-background-color: #b9d7cd !default;
-$code-background-color-dark: #3F4447 !default;
+$code-background-color-dark: $background-color !default;
 $form-background-color: mix(#000, #FFFDE4, 15%) !default;
 
 $footer-background-color: #8da990 !default; // 헤더 & 푸터 배경색

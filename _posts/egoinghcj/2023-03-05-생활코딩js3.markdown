@@ -1,0 +1,388 @@
+---
+title: "[자바스크립트] 자바스크립트 (완) / 19. 반복문 예고 ~ 37. 수업을 마치며"
+header:
+    overlay_image: "https://cdn.pixabay.com/photo/2014/09/28/21/30/light-465350_1280.jpg"
+    caption:
+excerpt: 생활코딩! HTML + CSS + 자바스크립트
+
+categories:
+    - Egoinghcj
+tags:
+    - [Egoinghcj, JavaScript, Stuby, 생활코딩, 자바스크립트, 공부]
+toc: true
+toc_sticky: true
+
+date: 2023-03-05
+last_modified_at: 2023-03-05
+---
+<figure style="display: inline-block;">
+  <img src="http://www.examplus.net/shopimages/examplus1/0030200012102.jpg?1648554091" style="width: 400px;" alt="생활코딩" />
+  <figcaption>3일 차 (완료)</figcaption>
+</figure>
+
+## 📺 책과 병행한 강의 & 영상
+### [부스트코스 - 자바스크립트의 시작](https://www.boostcourse.org/cs124){:target="_blank"}
+### [유튜브 "생활코딩" - WEB2-JavaScript](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf){:target="_blank"}
+---
+
+<blockquote>⚠️ <a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" target="_blank">HTML</a> 수업에 의존하는 수업이기 때문에 먼저 보고 진행 할 것을 권장<br/>
+⚠️ 실습 내용이 제외되어 간략하게 설명되어 있음</blockquote>
+
+## 19. 반복문 예고
+저번 조건문 학습 때 사용했던 코드의 상태에 때라 링크의 색상을 바꿔보자.   
+이 때 <u>반복문</u>을 이용하면 비교적 편리하게 바꿀 수 있다.   
+<br/>
+아래 코드는 태그 하나하나에 반복적으로 blue 색상을 지정하는 코드이다. 
+```javascript
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+    alist[i].style.color = 'blue';
+    console.log(alist[i]);
+    i = i+1;
+}
+```
+
+## 20. 배열
+<blockquote>배열 (array) : 연관된 데이터를 잘 정리 정돈해서 담아두는 일종의 수납 상자</blockquote>
+
+```javascript
+// 문자열 배열 선언
+// 배열은 [대괄호로 시작해서 ]대괄호로 끝나며, 값들은 , 콤마로 구분한다.
+// 문자열 배열이기 때문에 값 당 ""로 나열한다.
+var array = ["김이름", "이이름"]
+
+// 배열 값 꺼내오기
+// 배열은 0번부터 시작한다.
+document.write(array[0]); // "김이름"
+document.write(array[1]); // "이이름"
+
+// 배열안에 값이 몇개 있는 지 알려주는 코드
+document.write(array.length) // 2
+
+// 배열에 값 추가하기
+// 배열 끝에 추가된다.
+array.push("박이름");
+```
+
+## 21. 반복문
+<blockquote>반복문 (loop) : 코드를 여러 번 반복해야하는 경우 사용</blockquote>
+기본적인 코드 실행 순서는 위에서부터 아래로 순서대로 코드를 실행한다.   
+여러 번 반복해야하는 경우에 반복문을 사용하며, 프로그램의 흐름을 제어하기 때문에 제어문이라고 한다.
+
+```javascript
+// 조건 부분은 불리언 타입이 들어가야 한다.
+// 반복문을 언제 종료해야 하는 가를 지정하는 것이 중요하다.
+while(조건){
+    // 조건이 true이 경우 {}안에 코드가 실행하며, 조건이 false가 될 때까지 반복한다.
+}
+```
+
+## 22. 배열과 반복문
+반복문을 이용해 배열에 담긴 데이터를 순차적으로 꺼내보자.   
+배열 안에 각 항목들을 원소(element)라고 한다.   
+반복문을 언제 종료해야 하는 가를 지정하는 것이 중요하다고 했는데, 반복 횟수를 정해주는 카운트를 사용한다.   
+
+```javascript
+// 배열명[인덱스번호]
+// 배열에 해당하는 인덱스 번호가 없다면 undefined가 출력 된다.
+// 결괏값
+// 김이름이이름박이름최이름
+var array = ["김이름", "이이름", "박이름", "최이름"];
+var i = 0;
+
+while(i < 4){ // i는 현재 0이고, 4보다 작은 3까지 반복한다가 조건
+    document.write(array[i]) // body 태그 안에 배열 번호로 지정된 값을 출력한다.
+    i = i+1; // 코드가 끝날 때마다 카운트로 사용되는 i변수에 1이 더해진다.
+}
+```
+```javascript
+// 배열 크기는 인덱스가 0부터 시작하기 때문에 마지막 번호보다 1 크다.
+// 결괏값
+// 김이름이이름박이름최이름
+var array = ["김이름", "이이름", "박이름", "최이름"];
+var i = 0;
+
+while(i < array.length){ // i는 현재 0이고, 배열 크기보다 작을 때만 반복
+    document.write(array[i]) // body 태그 안에 배열 번호로 지정된 값을 출력한다.
+    i = i+1; // 코드가 끝날 때마다 카운트로 사용되는 i변수에 1이 더해진다.
+}
+```
+이렇게 직접 값을 입력하여 하나하나 꺼내오지 않아도 되고, 자동화된 정리를 할 수 있게 된다.
+
+## 23. 배열과 반복문의 활용
+검색은 소프트웨어를 만드는 것의 일부이다.
+
+```javascript
+// a태그를 모두 가져오려면 ?
+document.querySelector('a') // 맨 처음 하나의 a태그만 가져옴
+document.querySelectorAll('a') // [a, a, a] 모든 a태그를 배열 형태로 가져옴
+
+
+// 이전 시간에 만든 토글 코드로 a태그 색상을 상태에 따라 바꿔보자
+var target = document.querySelector('body');
+
+if(this.value === "night") {
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value = 'day'
+
+    var alist = document.querySelectorAll('a')
+    var i=0;
+    while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i+1;
+    }
+    
+}else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value = 'night'
+
+    var alist = document.querySelectorAll('a')
+    var i=0;
+    while(i < alist.length){
+        alist[i].style.color = 'green';
+        i = i+1;
+    }
+}
+
+
+
+```
+## 24. 함수 예고
+<blockquote>함수 (function) : 코드를 잘 정리 정돈하기 위한 도구 </blockquote>
+함수를 이용하면 유지보수가 극단적으로 좋아진다.
+## 25. 함수
+함수의 기본적인 문법과 매개변수(parameter), 인자(argument), return 키워드를 배우면 끝난다.
+
+```javascript
+function 함수명() {
+    // 함수 실행 코드
+}
+
+// 함수 호출
+함수명();
+```
+함수를 호출하면 호출한 위치에서 해당 함수가 그 자리에 있는 것처럼 실행된다.
+## 26. 매개변수와 인자
+<blockquote>
+매개변수 (parameter), 인자 (argument) : 함수 입력 값 <br/>
+return : 함수의 출력 값
+</blockquote>
+함수는 호출되면 <u>언제나 똑같이 동작</u>하지만, 입력 값에 따라 <u>결과가 다른 출력</u>을 할 때 필요한 것이   
+<mark>매개변수</mark>, <mark>인자</mark>, <mark>return</mark> 이다.
+
+```javascript
+function 함수명(a, b) { // 매개변수 : 함수에서 받는 입력 값
+    document.write(a+b);
+}
+함수명(5, 7); // 인자 : 함수로 보낼 입력 값
+            // 12
+```
+## 27. 함수(return 문)
+<blockquote>
+표현식 (expression) : 2에 대한 표현식은 1+1, 2-1 1===1 등등이 있다.
+</blockquote>
+원하는 결과값을 받도록하는 표현식을 만들기 위해서는 return을 알아햐 한다.   
+위와 같은 코드도 물론 좋은 코드임!
+
+```javascript
+function 함수명(a, b) {
+    return a+b;
+}
+document.write(함수명(a+b) + "<br/>");
+document.write(<div style="color: red;">함수명(a+b)</div>);
+document.write(<div style="font-size: 10px;">함수명(a+b)</div>);
+
+```
+상황에 따라 이런 식으로 활용 할 수 있다.
+
+## 28. 함수의 활용
+```javascript
+function colorHandler(self){
+    // 함수 실행 코드
+}
+<input type="button" value="night" onclick="colorHandler(this);">
+```
+this = 이벤트가 소속된 태그를 가리키는 키워드   
+onclick 속성에 작성했던 자바스크립트 코드를 함수로 만들고 실행 할 때에, this를 활용 할 수 있다. 
+
+## 29. 객체 예고
+<blockquote>
+객체 (object) : 서로 연관된 함수와 변수를 그루핑해서 정리 정돈하기 위한 수납상자
+메서드 (method) : 객체에 소속된 함수
+</blockquote>
+프로그래밍을 배울 때 큰 산 두 개는 <mark>객체</mark>와 <mark>함수</mark>다.
+
+## 30. 객체 쓰기와 읽기
+<blockquote>
+배열 : 데이터를 순서대로 저장<br/>
+객체 : 데이터를 순서없이 저장
+</blockquote>
+obj라는 변수에 객체를 담을 것이다.   
+객체를 만들 때 사용하는 기호를 <mark>객체 리터럴 (object literal)</mark> 이라고 한다.   
+객체 값을 꺼낼 땐 <b>객체 접근 연산자 (object access operator)</b> <mark>.</mark> 으로 접근하여 꺼낸다.   
+
+```html
+// 배열은 [] 대괄호 사용
+// 객체는 {} 중괄호 사용
+<script>
+    var obj = {
+        // "key 값" : "value 값"
+        "name" : "김이름",
+        "age" : "20"
+}
+// 객체 값 꺼내기
+    document.write(obj.name); // 김이름
+    document.write(obj.age); // 20
+    
+    // 객체 값 추가하고 꺼내기
+    obj.birth = "1131";
+    document.write(obj.birth); // 1131
+    
+    // 값에 공백이 있을 경우 추가하는 방법
+    obj["home address"] = "seoul";
+    document.write(obj["home address"]); // seoul
+
+</script>
+```
+
+## 31. 객체와 반복문
+객체에 있는 데이터를 모조리 다 가져와야 하는 경우가 있다.   
+<u>반복문</u> 중 <b>for문</b>으로 객체에 있는(in) key값을 가져오는 방법이다.
+
+```javascript
+    var obj = {
+        "name" : "김이름",
+        "age" : "20"
+}
+// 반복문
+// key 값 모두 꺼내기
+for(var key in obj){
+    document.write(key) // nameage
+}
+// key값, value값 모두 꺼내기
+for(var key in obj){
+    document.write(obj[key]) // nameage김이름20
+}
+
+```
+
+## 32. 객체 프로퍼티와 메서드
+<blockquote>
+메서드 (method) : 객체에 소속된 함수<br/>
+프로퍼티 (properties) : 객체에 소속된 변수
+</blockquote>
+
+이 후 내용을 배우기 위해선 앞 전의 배운 내용을 모르면 큰일난다.   
+객체는 함수도 담을 수 있다.
+
+```javascript
+    var obj = {
+        "name" : "김이름",
+        "age" : "20"
+}
+
+// obj 객체에 showAll이라는 key에 함수 value를 추가하기
+obj.showAll = function(){
+    for(var key in obj){
+        document.write(obj[key]) // nameage김이름20
+    }
+}
+
+// 함수 호출
+obj.showAll();
+```
+이렇게 되면 단점이 showAll() 이라는 함수 안에   
+obj 객체명이 명시되어 있기 때문에 객체 이름이 바뀐다면 오류가 발생할 수 있다.   
+앞에 배운 <mark>this</mark> 키워드를 이용해 리팩터링 해준다.
+
+```javascript
+    var obj = {
+        "name" : "김이름",
+        "age" : "20"
+}
+// 함수 내부 객체명을 this 키워드로 교체
+obj.showAll = function(){
+    for(var key in this){
+        document.write(this[key]) // nameage김이름20
+    }
+}
+// 함수 호출
+obj.showAll();
+```
+
+## 33. 객체의 활용
+객체에 함수를 담다보면 동작하지 않는 경우가 있다.   
+이럴 땐 개발자 도구의 Console탭으로 들어가면 에러 메세지를 볼 수 있다.   
+에러메세지를 보면 문제가 발생한 곳으로 이동할 수 있다.   
+
+1. 프로퍼티와 프로퍼티는 콤마(,)를 이용해 구분해준다.
+2. 계속 사용해 왔던 document는 객체다.
+3. querySelector()는 함수이며, 객체에 소속되어 있기 때문에 메서드다.
+<br/>
+
+## 34. 파일로 쪼개서 정리 정돈하기
+정리 정돈은 서로 연관된 코드들을 파일로 묶어서 그루핑 하는 것이다.
+
+- \<script> 태그로 이루어진 코드는 .js 파일로 쪼갤 수 있다.
+- 만약 쪼갠 .js파일을 html파일에 불러오고 싶다면
+
+```html
+<script src="/위치/파일명.js"></script>
+```
+
+- 이렇게 작성하면 똑같이 동작하게 된다.
+- 위 처럼 \<style> 태그로 이루어진 코드도 .css 파일로 쪼갤 수 있다.
+
+```html
+<link rel="stylesheet" href="/위치/파일명.css">
+```
+
+- 작성한 코드를 재사용 할 수 있게 하는 장점이 있다.
+- 가독성이 좋아지고, 코드가 훨씬 명확해지며 코드의 의미를 파일명을 통해 알 수 있게 된다.
+- 웹 서버 입장에서는 웹 브라우저가 컴퓨터 캐시(cache)에 파일을 다운로드 해 놓는데, 네트워크를 통하지 않고 다음에 접속할 때 다운로드 해놓았던 파일을 읽어들여 빠르게 표시하고, 비용을 절감 할 수 있게 된다.
+
+## 35. 라이브러리와 프레임워크
+소프트웨어를 만들 때 혼자 만드는 것보다 다른 사람이 이미 잘 만든 것을 부품으로 삼아   
+내가 만들고자 하는 것을 빠르게 조립해서 만드는 것이 아주 중요한 기본이다.   
+그 때 알아두면 좋은 키워드가 <mark>라이브러리</mark> 와 <mark>프레임워크</mark> 이다.
+
+<blockquote>
+라이브러리 (Library) : 정리 정돈 돼 있는 곳, 재사용하기 쉽게 돼 있는 소프트웨어, 가져와서 사용하는 느낌 <br/>
+프레임워크 (Framework) : 언제나 공통적으로 필요한 것이 제공되고 기획 의도에 따라 달라지는 반제품과 같은 것을 제공, 들어가서 작업하는 느낌
+</blockquote>
+
+자바스크립트 라이브러리 중 가장 유명한 것이 <b>jQuery</b>이다.   
+jQuery는 새로운 언어가 아닌 대신 처리해주는 라이브러리이다.      
+직접 내려받아 사용할 수도 있지만, <mark>CDN (Content Delivery Network)</mark> 이라는 방식으로,   
+\<script src="CDN 주소"> 를 가져오면 사용할 수 있게 된다.   
+jQuery의 장점은 코드가 직관적이어서 배우기 쉽고, 가독성이 좋으며 반복문을 쓰지 않아도 된다는 것이다.
+
+## 36. UI vs. API
+<blockquote>
+UI (User Interface) : 사용자가 시스템을 제어하기 위해 사용하는 조작 장치<br/>
+API (Application Programming Interface) : 애플리케이션을 만들기 위해 프로그래밍 할 때 사용하는 조작 장치
+</blockquote>
+
+예를 들어, 앞전 실습 때 사용한 <mark>alert()</mark> 경고창을 띄우는 함수는   
+WEB API인데, 이것은 웹 브라우저를 만든 사람들이 자바스크립트 사용 설명서를 통해 약속한 것이다.   
+API와 순서는 단어와 문법처럼 서로 떼려야 뗄 수 없는 관계이다.
+
+## 37. 수업을 마치며
+<blockquote>공부보다는 실습이다.</blockquote>
+프로젝트를 시작하는 것에는 때가 있지만 자신의 프로젝트를 시작할 때 모든 개념을 총동원 하려 하지 마라.   
+최소한의 지식으로 현실의 문제를 해결하려 하자.   
+
+### 한계를 극복할 만한 검색어
+1. document 객체
+2. DOM 객체
+3. 웹 브라우저 자체 제어 - window 객체
+4. 웹 페이지 리로드 없이 정보변경 - Ajax
+5. 현재 상태 유지 - cookie
+6. 인터넷 없이 동작 - offline web application
+7. 화상 통신 - webRTC
+8. 음성 인식 - speech API
+9. 그래픽 게임 - WebGL
+10. 가상 현실 - WebVR

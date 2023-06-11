@@ -1,0 +1,188 @@
+---
+title: "[자바스크립트] 자바스크립트 / 01. 수업 소개 ~ 08. 웹 브라우저 제어"
+header:
+    overlay_image: "https://cdn.pixabay.com/photo/2014/09/28/21/30/light-465350_1280.jpg"
+    caption:
+excerpt: 생활코딩! HTML + CSS + 자바스크립트
+
+categories:
+    - Egoinghcj
+tags:
+    - [Egoinghcj, JavaScript, Stuby, 생활코딩, 자바스크립트, 공부]
+toc: true
+toc_sticky: true
+
+date: 2023-03-03
+last_modified_at: 2023-03-03
+---
+<figure style="display: inline-block;">
+  <img src="http://www.examplus.net/shopimages/examplus1/0030200012102.jpg?1648554091" style="width: 400px;" alt="생활코딩" />
+  <figcaption> 1일 차</figcaption>
+</figure>
+
+## 📺 책과 병행한 강의 & 영상
+### [부스트코스 - 자바스크립트의 시작](https://www.boostcourse.org/cs124){:target="_blank"}
+### [유튜브 "생활코딩" - WEB2-JavaScript](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf){:target="_blank"}
+---
+
+<blockquote>⚠️ <a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" target="_blank">HTML</a> 수업에 의존하는 수업이기 때문에 먼저 보고 진행 할 것을 권장<br/>
+⚠️ 실습 내용이 제외되어 간략하게 설명되어 있음</blockquote>
+
+## 1. 수업 소개
+HTML은 정적인데, 게임처럼 동적으로 사용자와 상호작용하고 싶다라는 욕망에 의해 태어난 것이 <b>자바스크립트(JavaScript)</b>이다.   
+그것을 배워 볼 것이다.
+
+## 2. 수업의 목적
+<blockquote>프로그래밍 공부를 할 때는 항상 극단적으로 생각하라.</blockquote>
+웹 페이지는 한 번 화면에 출력되면 <u>자기 자신을 바꾸는 능력이 없다.</u>   
+그것을 가능하게 해주는 것이 <b>자바스크립트</b>다.
+1. 자바스크립트는 사용자와 상호작용하는 언어
+2. HTML은 웹 브라우저 화면에 한 번 출력되면 자기자신을 바꿀 수 없다
+3. 자바스크립트는 HTML을 제어하는 언어
+4. 웹페이지를 동적으로 바꿔준다.   
+<br/>
+
+웹에서 <u>개발자 도구</u>를 열면 Elements라는 탭을 볼 수 있다.   
+<blockquote> document = body 태그 내부<br/>
+Element = 태그 라는 뜻</blockquote>
+<b>\<input></b>이라는 태그의 속성 중 type을 "button"으로 지정하면 버튼을 만들 수 있다.   
+또, <b>value</b> 속성으로 버튼 이름을 부여할 수 있다.   
+<b>onclick</b>이라는 속성은 버튼을 클릭 했을 때 속성에 부여한 자바스크립트 코드가 실행되며 자바스크립트로 제어할 수 있게 된다.  
+
+```javascript
+// body 태그를 선택하는 자바스크립트 코드
+document.querySelector('body')
+
+// body 태그 선택.style 속성 선택.변경하고 싶은 style속성 선택="변경을 원하는 색상";
+// style 속성을 선택했으면 반드시 css 코드가 와야한다.
+document.querySelector('body').style.color='white';
+```
+
+## 3. HTML과 JS의 만남 : \<script> 태그
+자바스크립트는 HTML위에서 동작하는 언어다.
+HTML에게 자바스크립트가 시작된다는 사실을 알리는 태그가 \<script> 태그이며, 자바스크립트 언어로 해석한다.
+HTML에서 1+1 작성하면 연산되지 않은 결괏값 1+1로 출력 (정적)   
+자바스크립트에서 1+1 작성하면 연산된 결괏값 2로 출력 (동적)
+
+```javascript
+// body 태그 안에 ()안에 값을 출력하는 코드 
+document.write(1+1); // 2가 출력
+```
+
+## 4. HTML과 JS의 만남 : 이벤트
+<blockquote>이벤트 : 사용자가 특정 행동을 하면 특정한 때에 발생하는 역할</blockquote>
+<b>\<input></b>태그를 이용한다.
+<blockquote>- type="button" : 버튼을 만들어주는 속성<br/>
+- onclick="" 속성 : 클릭 했을 때 어떤 자바스크립트를 실행하는 속성</blockquote>
+```html
+// 클릭했을 때 hi라고 경고창이 출력되는 이벤트가 발생하는 버튼
+// onclick="이 안은 반드시 자바스크립트 코드가 와야 한다"
+<input type="button" value="버튼명" onclick="alert('hi')"></input>
+```
+onclick 속성안의 자바스크립트 코드를 웹 브라우저가 기억했다가,사용자가 클릭했을 때 브라우저가 실행하는 것이다.
+
+<blockquote>- type="text" 속성 : 텍스트 상자를 만들어주는 속성<br/>
+- onchange="" 속성 : text 타입의 경우, 텍스트 상자안에 작성하는 것이 value 값이 되는데, value값이 바뀔 때마다 실행하는 속성이다.
+작성 후, 마우스 커서를 바깥쪽으로 빼서 클릭해야지 실행된다.<br/>
+- onkeydown="" 속성 : 텍스트 상자안에서 아무 키나 눌렀을 경우 실행하는 속성</blockquote>
+
+## 5. HTML과 JS의 만남 : 콘솔
+웹에서 개발자 도구를 열면 Console이라는 탭이 있다.   
+이 콘솔은 파일을 만들지 않고 자바스크립트 코드를 즉석 실행할 수 있는 기능이다.
+<br/><br/>
+🔽 텍스트의 글자 수를 세어주는 코드
+```javascript
+// ''안에 글자는 문자가 된다. 
+// alert() 경고창 출력
+// .length는 앞에 있는 문자의 갯수를 세어 줌
+alert('aaaaaaasasdasfadjfhslkdjfhlksdfhldf'.length)
+```
+
+<blockquote>console.log() : 콘솔창에서 ()안에 결괏값을 출력해주는 코드</blockquote>
+콘솔 창에서 🔼 위쪽 방향키를 누르면 방금 작성한 것을 그대로 다시 화면에 불러온다.
+
+## 6. 데이터 타입 - 문자열과 숫자
+자바스크립트에는 6개의 데이터 타입이 있다.   
+데이터 타입을 한국에서 <b>자료형</b>이라고 부르며, 종류에는 크게 <b>문자열(String)</b>와 <b>숫자(Number)</b>가 있다.
+1. Boolean
+2. Null
+3. Undefined
+4. Number
+5. String
+6. Symbol (ECMAScript 2015)
+
+### Number 타입
+```javascript
+// 데이터 타입 'Number'
+console.log(1+1) // 2 출력
+```
+위와 같이 **왼쪽 값 + 오른쪽 값 = 하나의 값 (이항 연산자)**으로 만드는 **산수(산술 연산자)**를 가능하게 하는 타입이다.   
+```javascript
++ // 더하기
+- // 빼기
+* // 곱하기
+/ // 나누기
+% // 나머지
+```
+
+### String 타입
+<blockquote>" " (o) " ' (x) : 시작 따옴표와 끝나는 따옴표가 같아야 한다.</blockquote>
+문자열은 "" 따옴표로 이루어져 있다. '' 작은 따옴표를 사용해도 무방하다. 
+```javascript
+'aaaaaa'.length // 6 출력
+``` 
+위처럼 <u>.length</u> 와 같은 것들을 <b>프로퍼티(properties)</b>라고 한다.   
+프로퍼티는 여러가지가 있는데, .toUpperCase()와 .indexOf() 에 대해 알아보겠다.
+
+```javascript
+'aaaaaa'.toUpperCase() // 'AAAAAA' 출력
+'aoaoao'.indexOf('o') // 1
+```
+
+<u>.toUpperCase()</u>는 앞에 문자열을 대문자로 출력시켜준다.   
+<u>.indexOf()</u>는 앞에 문자열 중 몇 번째에 있는지 알려준다 (0부터 시작, 공백 포함).   
+해당 문자가 없으면 -1 출력하며, 가장 앞쪽에 있는 문자 1개만 알려준다.
+<br/>
+
+```javascript
+1+1 // 2
+"1"+'1' // '11'
+```
+이처럼 데이터 타입을 정확히 표현 해야한다.
+
+## 7. 변수와 대입 연산자
+<blockquote>변수(variable) : 바뀔 수 있는 값 </blockquote>
+
+```javascript
+a = 1;
+b = 2;
+a+b; // 3
+
+a = 10;
+a+b; // 12
+```
+여기서 <b> = </b>은 대입 연산자라고 하며, 오른쪽에 있는 값을 왼쪽에 있는 변수에 대입하여 할당 해주는 역할을 한다.
+
+<blockquote>상수(constant) : 변하지 않는 값 </blockquote>
+```javascript
+1 = 2; // error : caught SyntaxError: Invalid left-hand side in assignment
+```
+1은 언제나 1이기 때문에 2를 대입 할 수 없다.
+
+```javascript
+var name = '김이름';
+'동해물과 백두산이 마르고 닳도록 ' + name + ' 하느님이 보우하사 우리나라 만세';
+// '동해물과 백두산이 마르고 닳도록 김이름 하느님이 보우하사 우리나라 만세'
+name = '이이름';
+'동해물과 백두산이 마르고 닳도록 ' + name + ' 하느님이 보우하사 우리나라 만세';
+// '동해물과 백두산이 마르고 닳도록 이이름 하느님이 보우하사 우리나라 만세'
+```
+### 변수 선언 방식 키워드 var, let, const 
+<blockquote>
+var = variable 변수 (전역)<br/>
+let = 지역 변수<br/>
+const = constant 상수   
+</blockquote>
+
+## 8. 웹 브라우저 제어
+웹 브라우저를 제어하려면 \<body> 태그를 웹 브라우저에게 알리는 방법을 자바스크립트 문법으로 알아야 한다.

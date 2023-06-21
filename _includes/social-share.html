@@ -4,11 +4,29 @@
     {% endif %}
 
     <span>
-	<script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
-	<script type="text/javascript">
-	new ShareNaver.makeButton({"type": "f"});
-	</script>
-  </span>
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+        new ShareNaver.makeButton({"type": "f"});
+        </script>
+    </span>
+
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+        Kakao.init("d2e95d6c8155d710d8c8d26f7b623cbd");   // 아까 복사해둔 JavaScript 키
+        function sendLink() {
+            Kakao.Link.sendCustom({
+                templateId: 95236,   // 복사해둔 템플릿 ID
+                templateArgs: {
+                    title: "{{ page.title }}",
+                    description: "{{ page.excerpt }}",
+                    url : "{{ page.url }}",
+                },
+            });
+        }
+    </script>
+    <a class="btn btn--kakao" id="kakao-link-btn" href="javascript:sendLink()">
+        <i class="fa-fw fas fa-comment" aria-hidden="true"></i>
+    </a>
 
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
        class="btn btn--facebook"

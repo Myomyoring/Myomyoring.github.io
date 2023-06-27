@@ -1,0 +1,171 @@
+---
+title: "[자바스크립트] CSR + SSR / SPA + MPA 알아 보기"
+header: 
+    overlay_image: "https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101_1280.jpg"
+    caption:
+excerpt: CSR, SSR에 대해 알아보자
+
+categories:
+    - JavaScript
+tags:
+    - [JavaScript, 자바스크립트]
+toc: true
+toc_sticky: true
+
+date: 2023-06-27
+last_modified_at: 2023-06-27
+---
+<br/>
+개발 공부를 하면서 자주 보고 들은 용어 중   
+CSR, SSR에 대해 정리해볼까 한다.
+<blockquote>CSR (Client Side Rendering) = 클라이언트 사이드 렌더링<br/>    
+SSR (Server Side Rendering) = 서버 사이드 렌더링</blockquote>
+우선 공통적으로 들어가는 <mark>렌더링</mark>에 대해 간단히 알아보자.   
+
+---
+
+# 1. 렌더링 (Rendering)?
+서버로부터 요청하여 받은 문서 (HTML, CSS, JAVASCRIPT)를 화면 (View)에 표시하는 작업이며,   
+이 방식이 크게 CSR과 SSR로 나뉜다.
+
+
+# 2. CSR 클라이언트 사이드 렌더링?
+클라이언트(브라우저)에서 사용자의 요청을 처리하는 방식.   
+
+- 서버에서 텅텅 빈 페이지(HTML, CSS)를 클라이언트에 전달   
+- 서버에서 전달받은 페이지에 링크된 JS파일을 클라이언트에서 다운로드 받는데, 이 때는 페이지에 아무것도 보이지 않는다.   
+- JS파일에는 어플리케이션을 구동하기 위한 소스코드 등이 들어있다.      
+- 사용자 요청이 있을 경우, 서버에 필요한 데이터를 받아와 클라이언트에서 처리하고 보여주게 된다.   
+
+
+# 3. SSR 서버 사이드 렌더링?
+서버에서 사용자의 요청을 처리하는 방식.   
+
+- 서버에서 데이터를 포함하여 구성된 첫 페이지(HTML, CSS, JS / 정적 파일)를 클라이언트에 전달
+- 미리 구성되어 있기 때문에 클라이언트에서 즉시 렌더링
+- 서버에서 전달받은 페이지에 링크된 JS파일(동적 파일)을 클라이언트에서 다운로드 받는데,   
+이 때는 렌더링은 되었지만 동적 JS가 다운로드가 완료 될 때 까지 사용자의 요청을 처리할 수 없다.
+- 그 후, 자바스크립트 프레임워크 실행
+
+
+# 4. 장단점 비교
+
+____ | CSR | SSR |
+:---:|:--:|:---:|
+장점| - 동적으로 빠르게 필요한 부분을 사용자에게 보여주기 때문에 UX가 뛰어나다.<br/> - 필요한 데이터만 서버에 요청하기 때문에 서버의 부담이 줄어든다.<br/> - Blinking issue (화면 깜빡임)가 없다. | - SEO를 해결돼어 컨텐츠를 검색엔진에 노출시킬 수 있다.<br/> - 첫 페이지 로딩 속도가 빠르다. |
+단점| - 첫 페이지 로딩 시, JS파일을 모두 받아오기 때문에 시간이 오래 걸릴 수 있다.<br/>- <a href="https://ko.wikipedia.org/wiki/%EA%B2%80%EC%83%89_%EC%97%94%EC%A7%84_%EC%B5%9C%EC%A0%81%ED%99%94" target="_blank">SEO (검색 엔진 최적화)</a>에 대한 작업을 추가로 해주어야 한다. | - 서버 부하가 발생할 수 있다.<br/> - 페이지 이동 시 마다 서버에서 렌더링 돼서 Blinking issue (화면 깜빡임)가 발생 한다. |
+
+
+# 5. SPA & MPA
+<blockquote>
+SPA (Single Page Application) = 최초 페이지 로딩 시 전체를 받아온 후 동적으로 필요한 데이터만 변경하여 사용할 수 있는 어플리케이션, 새로고침 되지 않는다.<br/>
+MPA (Multi Page Application) = 서버에서 완전한 페이지를 받아온 후 필요한 데이터 요청하면 새로 렌더링하여 그 페이지로 이동한다.
+</blockquote> 
+
+## 5-1. 그렇다면 SPA === CSR & MPA === SSR ?
+<mark><b>"NO"</b></mark>라고 대답할 수 있다.   
+   
+SPA와 MPA는 <b>웹페이지 구성 방식</b>이고,   
+CSR과 SSR은 <b>렌더링 방식</b>이다.
+
+# 6. 그럼 두 방식을 섞는 건?
+SSR로만 SPA의 구현이라던가, CSR로만 MPA 구현은 불가하다.   
+그렇게 되는 순간 본질의 의미를 잃어버리게 되기 때문!   
+
+# 6-1. SPA에 SSR 방식?!
+CSR방식을 사용하는 SPA의 큰 단점인 SEO은 치명적이다.   
+내가 만든 웹사이트를 배포했지만 검색 했는데 안 나온다면 배포한 의미가 없어진다.   
+비교적 사용자 친화적인 SPA의 단점을 커버하기 위해       
+많은 개발자들이 서버에 미리 렌더링 해두는 방법을 연구했고, SPA으로 SSR방식 사용할 수 있게 됐다.
+
+# 7. Pre-rendering, 그리고 Next.js
+
+자바스크립트 라이브러리이자 프레임워크인 <b>React</b>를 예로 설명하자면, (Vue.js의 경우 Nust.js에 해당)     
+React는 SPA로 작동하는데, React 라이브러리인 <b>Next.js</b>로 SPA에서 SSR을 할 수 있게 한다.   
+Next.js는 브라우저에 렌더링 할 때, <a href="https://xtring-dev.tistory.com/entry/Nextjs-Nextjs-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B02-Nextjs%EC%9D%98-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%ED%8A%B9%EC%A7%95" target="_blank">Pre-rendering (사전 렌더링)</a>을 하여   
+기존 CSR방식인 서버에서 빈 페이지를 받은 후 JS파일이 다운로드 될 때까지 아무것도 보이는게 아닌,   
+서버에서 가공된 페이지를 받아 즉시 화면에 보여줄 수 있는 것이다.   
+<br/>
+Pre-rendering에는 두 가지 방식이 있다.   
+<br/>
+SSG (Static Site Generation / Static Generation) : 빌드 타임에 Pre-rendering을 진행, 정적 생성   
+SSR (Server Side Rendering) : 서버 사이드 렌더링, 클라이언트 요청에 올 때 Pre-rendering 진행, 동적 생성   
+
+이를 참고하여 빌드 시, 활용할 수 있게 된다.
+
+# 8. 참고한 글
+
+<a href="https://ctdlog.tistory.com/46" target="_blank">Quat님 블로그</a><br/>
+<a href="https://adjh54.tistory.com/53#1)%20%EB%A0%8C%EB%8D%94%EB%A7%81%EC%9D%B4%EB%9E%80%3F-1" target="_blank">Contributor9님 블로그</a><br/>
+<a href="https://velog.io/@yun8565/%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81SSR%EA%B3%BC-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81CSR" target="_blank">이창윤님 벨로그</a><br/>
+<a href="https://goodgid.github.io/Server-Side-Rendering-and-Client-Side-Rendering/" target="_blank">goodGid님 블로그</a><br/>
+<a href="https://velog.io/@hlna0308/SPA%EC%99%80-CSR%EC%9D%80-%EA%B0%99%EC%9D%84%EA%B9%8C" target="_blank">sorogi님 벨로그</a><br/>
+<a href="https://blog.the-compass.kr/csr-ssr-spa-mpa-ede7b55c5f6f" target="_blank">홍승의님 블로그</a><br/>
+<a href="https://narup.tistory.com/235" target="_blank">기은P님 블로그</a><br/>
+<a href="https://taero.blog/posts/SPA-with-SSR" target="_blank">Taero님 블로그</a><br/>
+<a href="https://hanbit.co.kr/channel/category/category_view.html?cms_code=CMS7641364152" target="_blank">한빛출판네트워크</a><br/>
+<a href="https://velog.io/@longroadhome/FE-SSRServer-Side-Rendering-%EA%B7%B8%EB%A6%AC%EA%B3%A0-SSGStatic-Site-Generation-feat.-NEXT%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C" target="_blank">KG님 벨로그</a><br/>
+<a href="" target="_blank"></a><br/>
+
+<details>
+<summary>Next.js 프로젝트에서 <mark>yarn start</mark> 또는 <mark>npm run start</mark>를 할 경우 실행되는 코드 찾기</summary>
+<div markdown="1">
+<br/>
+나야말로 Next.js를 사용해본적이 없지만,   
+내 경험과 주어진 링크를 토대로 한 번 찾아보기로 했다.
+<blockquote>
+<a href="https://nextjs.org/docs/getting-started" target="_blank">Next.js 세팅 가이드</a><br/>
+<a href="https://github.com/vercel/next.js/" target="_blank">Next.js Github 레포지토리</a><br/>
+</blockquote>
+
+- 우선 yarn이든, npm이든 패키지 매니저 툴.
+- 환경설정 과정 중 하나인 package.json 파일을 먼저 보자
+
+```json
+// project/package.json
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start", 
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
+```
+- 여기서 알 수 있는 것은, yarn start나 npm run start라는 명령어를 실행하게 되면 <mark>next start</mark>가 실행되는 것이다.
+- Next.js 레포지토리에서 <mark>"start"</mark>가 들어간 파일들을 검색해봤다.
+- 23.06.27 기준, <mark>59개</mark>의 파일이 검색됐다.
+
+<img src="{{ site.url }}/assets/images/nextstart/1.JPG" />
+
+- 그 중에 눈에 들어온 next.js/packages/next/src/cli/<u>next-start.ts</u> 파일   
+(docs 디렉토리 파일에 설명되어 있을 줄 알았다)
+- 코드를 전부 복사해 오는 것은 좀 아닌 것 같아서 나름대로 보이는 것만 나열해보자.
+- 나는 아직 타입스크립트를 사용해보지 않았지만 유추해보겠다. (공부하자 악)
+- 가장 먼저 next start 뒤에 올 수 있는 옵션들에 대해 선언 되어있다.
+
+```typescript
+    '--help': Boolean, 
+    '--port': Number,
+    '--hostname': String,
+    '--keepAliveTimeout': Number,
+```
+
+- 다음으로 dir = 디렉토리, host = 호스트 이름, port = 포트 번호를 받아오는 변수 선언
+- keepAliveTimeout 선언부는 잘 모르겠다
+- config 선언부는 loadConfig(PHASE_PRODUCTION_SERVER) 전역에 선언된 서버 실행 관련 무언가 있는데, 그것을 실행하려는 선언 같다.
+- startServer 위에서 유효하게 받아왔다면, 그것들을 인자로 보내 해당 함수를 실행한다.
+- 마지막으로 궁금증 해결 및 내가 제대로 읽은게 맞나 대략적인 욕구 해소를 위해 chatGPT에게 물어봤다.
+
+<img src="{{ site.url }}/assets/images/nextstart/2.JPG" />
+
+</div>
+</details>

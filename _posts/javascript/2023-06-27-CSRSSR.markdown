@@ -144,7 +144,7 @@ SSR (Server Side Rendering) : 서버 사이드 렌더링, 클라이언트 요청
 - Next.js 레포지토리에서 <mark>"start"</mark>가 들어간 파일들을 검색해봤다.
 - 23.06.27 기준, <mark>59개</mark>의 파일이 검색됐다.
 
-<img src="{{ site.url }}/assets/images/nextstart/1.JPG" />
+<img src="{{ site.url }}/assets/images/postingimg/nextstart/1.JPG" width="70%" />{: .align-center}
 
 - 그 중에 눈에 들어온 next.js/packages/next/src/cli/<u>next-start.ts</u> 파일   
 (docs 디렉토리 파일에 설명되어 있을 줄 알았다)
@@ -165,7 +165,7 @@ SSR (Server Side Rendering) : 서버 사이드 렌더링, 클라이언트 요청
 - startServer 위에서 유효하게 받아왔다면, 그것들을 인자로 보내 해당 함수를 실행한다.
 - 마지막으로 궁금증 해결 및 내가 제대로 읽은게 맞나 대략적인 욕구 해소를 위해 chatGPT에게 물어봤다.
 
-<img src="{{ site.url }}/assets/images/nextstart/2.JPG" />
+<img src="{{ site.url }}/assets/images/postingimg/nextstart/2.JPG" width="70%" />{: .align-center}
 
 </div>
 </details>

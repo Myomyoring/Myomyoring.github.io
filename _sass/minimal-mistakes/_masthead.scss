@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .masthead {
-  background-image: url("https://cdn.pixabay.com/photo/2023/02/22/20/08/grass-7807333_1280.jpg");
+  //background-image: url("https://cdn.pixabay.com/photo/2023/02/22/20/08/grass-7807333_1280.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_1280.jpg");
   background-size: cover;
   //box-shadow: 0em 0.3em 1.2em 0.5em #B6BBC0;
   position: relative;
@@ -18,7 +19,7 @@
   &__inner-wrap {
     @include clearfix;
     background-color: $footer-background-color;
-    opacity: 0.5;
+    opacity: 0.3;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1em;

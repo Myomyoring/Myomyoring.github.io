@@ -74,4 +74,29 @@
                  {% endfor %}
              </ul>
   </ul>
+
+   <div>
+      <img style="width: 100px; margin-top: 1em; margin-bottom: 1em;" id="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmyomyoring.github.io&count_bg=%23B9D7CD&title_bg=%23B9D7CD&icon=&icon_color=%23000000&title=TODAY&edge_flat=true" />
+   </div>
+
+  <span style="font-size: 1em;" class="nav__sub-title">기업 기술 블로그</span>
+  <ul style="width: 100px; margin-top: 1em;">
+    <li>
+        <a href="https://d2.naver.com/" target="_blank">
+            네이버 D2
+        </a>
+    </li>
+    <li>
+        <a href="https://tech.kakao.com/blog/" target="_blank">
+            kakao Tech
+        </a>
+    </li>
+    <li>
+        <a href="https://techblog.woowahan.com/" target="_blank">
+            우아한 기술 블로그
+        </a>
+    </li>
+  </ul>
+
+
 </nav>

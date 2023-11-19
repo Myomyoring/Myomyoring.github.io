@@ -1,5 +1,5 @@
 import type { GatsbyConfig, PluginRef } from 'gatsby';
-import 'dotenv/config';
+import adapter from 'gatsby-adapter-netlify';
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
@@ -15,6 +15,7 @@ const config: GatsbyConfig = {
 		author: `@Myomyoring`,
 	},
 	trailingSlash: `always`,
+	adapter: adapter(),
 	plugins: [
 		{
 			resolve: `@lekoarts/gatsby-theme-minimal-blog`,

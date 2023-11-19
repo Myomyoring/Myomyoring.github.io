@@ -6,6 +6,7 @@ import Layout from './layout';
 import ItemTags from './item-tags';
 import Seo from './seo';
 import PostFooter from './post-footer';
+import Giscus from '@giscus/react';
 
 export type MBPostProps = {
 	post: {
@@ -63,6 +64,21 @@ const Post: React.FC<React.PropsWithChildren<PageProps<MBPostProps>>> = ({ data:
 			{children}
 		</section>
 		<PostFooter post={post} />
+		<Giscus
+			id="comments"
+			repo="Myomyoring/Myomyoring.github.io"
+			repoId="R_kgDOJcvsxw"
+			category="Comments"
+			categoryId="DIC_kwDOJcvsx84CbEZK"
+			mapping="pathname"
+			term="Welcome to @giscus/react component!"
+			reactionsEnabled="1"
+			emitMetadata="0"
+			inputPosition="top"
+			theme="preferred_color_scheme"
+			lang="ko"
+			loading="lazy"
+		/>
 	</Layout>
 );
 

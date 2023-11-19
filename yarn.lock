@@ -6183,9 +6183,9 @@ gatsby-plugin-catch-links@^5.12.0:
     "@babel/runtime" "^7.20.13"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-feed@^5.12.0:
+gatsby-plugin-feed@^5.12.3:
   version "5.12.3"
-  resolved "https://registry.npmjs.org/gatsby-plugin-feed/-/gatsby-plugin-feed-5.12.3.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-5.12.3.tgz#18f58826d404c41d33f42ae738dcabdbc6df8c40"
   integrity sha512-o10qmwUq4PpEZm9UJZxb6CZXgvQi89S8gxLP6OHXCxefb0PNVxAItLniuK3nTCE/DwuqZNVZxfDH5GmEkeUzQQ==
   dependencies:
     "@babel/runtime" "^7.20.13"

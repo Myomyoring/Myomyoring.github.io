@@ -18,6 +18,15 @@ const config: GatsbyConfig = {
 	adapter: adapter(),
 	plugins: [
 		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [`G-72462ERY2E`],
+				pluginConfig: {
+					head: true,
+				},
+			},
+		},
+		{
 			resolve: `@lekoarts/gatsby-theme-minimal-blog`,
 			options: {
 				navigation: [
@@ -50,15 +59,6 @@ const config: GatsbyConfig = {
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
 				output: `/`,
-			},
-		},
-		{
-			resolve: `gatsby-plugin-google-gtag`,
-			options: {
-				trackingIds: [`G-72462ERY2E`],
-				pluginConfig: {
-					head: true,
-				},
 			},
 		},
 		{

@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
 		siteTitle: `Myolog`,
 		siteTitleAlt: `Myolog | Tech Blog`,
 		siteHeadline: `Myolog | Tech Blog`,
-		siteUrl: `https://myomyoring.netlify.app/`,
+		siteUrl: `https://myomyoring.netlify.app`,
 		siteDescription: `프론트엔드 개발자 취준생 기술 블로그`,
 		siteImage: `/banner.jpg`,
 		siteLanguage: `ko`,

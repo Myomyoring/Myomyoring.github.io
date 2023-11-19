@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
 		siteTitle: `Myolog`,
 		siteTitleAlt: `Myolog | Tech Blog`,
 		siteHeadline: `Myolog | Tech Blog`,
-		siteUrl: `https://myomyoring.github.io/`,
+		siteUrl: `https://myomyoring.netlify.app/`,
 		siteDescription: `프론트엔드 개발자 취준생 기술 블로그`,
 		siteImage: `/banner.jpg`,
 		siteLanguage: `ko`,
@@ -41,8 +41,8 @@ const config: GatsbyConfig = {
 		{
 			resolve: `gatsby-plugin-robots-txt`,
 			options: {
-				host: `https://myomyoring.github.io/`,
-				sitemap: `https://myomyoring.github.io/sitemap.xml`,
+				host: `https://myomyoring.netlify.app/`,
+				sitemap: `https://myomyoring.netlify.app/sitemap-index.xml`,
 				policy: [{ userAgent: '*', allow: '/' }],
 			},
 		},

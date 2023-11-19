@@ -53,6 +53,15 @@ const config: GatsbyConfig = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [`G-72462ERY2E`],
+				pluginConfig: {
+					head: true,
+				},
+			},
+		},
+		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				name: `Myolog | Tech Blog`,

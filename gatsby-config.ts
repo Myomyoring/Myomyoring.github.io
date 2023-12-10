@@ -41,6 +41,10 @@ const config: GatsbyConfig = {
 				],
 				externalLinks: [
 					{
+						name: `Category`,
+						url: `https://myomyoring.netlify.app/tags`,
+					},
+					{
 						name: `Github`,
 						url: `https://github.com/Myomyoring`,
 					},

@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 1. 개발 목차 & 마이그레이션한 이유 & 왜 Gatsby? | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-01'
-categories: github-blog-ignore
+categories: github-blog
 ---
 
 안녕하세요 묘묘링입니다.  

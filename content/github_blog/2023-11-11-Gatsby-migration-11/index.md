@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 11. 코드 블럭 폰트 사이즈 변경하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-11'
-categories: github-blog-ignore
+categories: github-blog
 ---
 
 ![변경 전](./codeBlock_bf.png)

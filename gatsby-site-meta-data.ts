@@ -33,7 +33,7 @@ export default {
 	featured: [
 		{
 			title: 'Github Blog',
-			category: 'github-blog',
+			category: 'github-blog-ignore',
 		},
 	],
 

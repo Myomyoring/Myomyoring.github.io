@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 2. Gatsby 프로젝트 설치하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-02'
-categories: github-blog-ignore
+categories: github-blog
 ---
 
 Gatsby에도 Jekyll처럼 테마가 있는데요, 둘의 테마 커스텀 개념은 다릅니다.

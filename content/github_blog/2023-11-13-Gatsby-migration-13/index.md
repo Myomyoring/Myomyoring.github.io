@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 13. sitemap, rss, robots 적용하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-13'
-categories: github-blog-ignore
+categories: github-blog
 ---
 
 sitemap, robots, rss, 를 적용해 보겠습니다.  

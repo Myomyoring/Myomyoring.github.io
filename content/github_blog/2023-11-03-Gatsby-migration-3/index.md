@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 3. 'Shadowing'하여 커스텀 준비하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-03'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 이제 테마를 커스텀을 진행합니다.  

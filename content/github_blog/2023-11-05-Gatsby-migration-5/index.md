@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 5. 메인 페이지 부제목, 링크 Text 변경하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-05'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 ![변경 전](./subTitle_linkName_bf.png)

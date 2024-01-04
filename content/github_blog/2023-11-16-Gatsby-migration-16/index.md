@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 16. Google, 네이버 웹 마스터, Bing 웹 마스터, Daum 검색 등록하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-16'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 이제 포털 사이트에 내 블로그를 등록해보겠습니다.  

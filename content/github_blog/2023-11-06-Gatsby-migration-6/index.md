@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 6. 게시글 목록 위치 변경하고 태그 노출, 게시글 내용 미리보기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-06'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 ![변경 전](./list_bf.png)

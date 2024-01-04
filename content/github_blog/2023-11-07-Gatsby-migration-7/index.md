@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 7. 날짜 포맷 바꾸기-1 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-07'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 ![변경 전](./date_bf.png)

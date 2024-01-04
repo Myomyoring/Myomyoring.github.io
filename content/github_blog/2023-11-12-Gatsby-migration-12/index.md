@@ -2,7 +2,7 @@
 emoji: 🐈‍⬛
 title: 12. 웹 폰트 적용하기 | 깃허브 블로그 Gatsby 'minimal-blog' 테마로 마이그레이션 하기
 date: '2023-11-12'
-categories: github-blog
+categories: github-blog-ignore
 ---
 
 딱딱한 기존 폰트를 변경하겠습니다.  

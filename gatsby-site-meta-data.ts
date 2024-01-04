@@ -39,36 +39,20 @@ export default {
 
 	timestamps: [
 		{
-			category: 'Career',
-			date: '2022.01.04 - NOW',
-			en: 'A Corp.',
-			kr: 'A 회사',
-			info: 'A 팀',
-			link: '',
-		},
-		{
-			category: 'Career',
-			date: '2021.01.04 - 2022.01.04',
-			en: 'B Corp.',
-			kr: 'B 회사',
-			info: 'B 팀',
-			link: '',
-		},
-		{
-			category: 'Activity',
-			date: '2023.07 - NOW',
-			en: 'Community',
-			kr: '커뮤니티',
-			info: 'IT 커뮤니티',
+			category: '',
+			date: '',
+			en: '',
+			kr: '',
+			info: '',
 			link: '',
 		},
 	],
 
 	projects: [
 		{
-			title: 'Portfolio',
-			description: '포트폴리오',
-			techStack: ['React', 'JavaScript'],
+			title: '',
+			description: '',
+			techStack: [''],
 			thumbnailUrl: '', // Path to your in the 'assets' folder
 			links: {
 				post: '',

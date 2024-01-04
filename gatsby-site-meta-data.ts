@@ -7,7 +7,7 @@ export default {
 
 	comments: {
 		utterances: {
-			repo: ``, //`danmin20/danmin-gatsby-blog`,
+			repo: `Myomyoring/Myomyoring.github.io`, //`danmin20/danmin-gatsby-blog`,
 		},
 	},
 
